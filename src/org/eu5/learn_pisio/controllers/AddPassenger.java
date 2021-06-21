@@ -1,6 +1,8 @@
 package org.eu5.learn_pisio.controllers;
 
 import java.io.IOException;
+import java.io.PrintWriter;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -26,7 +28,16 @@ public class AddPassenger extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+		
+		PrintWriter out = response.getWriter();
+		response.setContentType("text/html");
+		
+		out.println("<!DOCTYPE html>");
+		out.println("<html>\n<head>");
+		out.println("\t<title>Hello from Servlet!</title>");
+		out.println("</head>\n<body>");
+		out.println("\t<h2>Welcome to World Adventures Airlines! :-)</h2>");
+		out.println("</body>\n</html>");
 	}
 
 	/**
