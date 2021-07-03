@@ -3,7 +3,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Hello from JSP!</title>
+	<meta charset="UTF-8" />
+	<title>World Adventures Airlines</title>
+	<link rel="stylesheet" href="css/normalize.css" />
 </head>
 <body>
 	<div class="container">
@@ -22,7 +24,7 @@
 					<input name="last-name" type="text" />
 				</div>
 				<div class="inputField">
-					<label for="dateOfBirth" class="inputLabel">Date of Birth::</label>
+					<label for="dateOfBirth" class="inputLabel">Date of Birth:</label>
 					<input name="dateOfBirth" type="text" />
 				</div>
 				<div class="inputField">
