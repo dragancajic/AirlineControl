@@ -1,2 +1,82 @@
-@CHARSET "UTF-8";
+body {
+	padding: 0;
+	margin: 0;
+	background-color: rgb(17, 142, 247);
+	text-align: center;
+}
 
+.container {
+	margin: 30px;
+	border: 0px solid gray;
+	border-radius: 25px;
+	background-color: gray;
+	text-align: center;
+	position: relative;
+	list-style: none;
+	list-style-position: inside;
+}
+
+.title {
+	font-family: georgia;
+	font-size: 36px;
+	color: white;
+	padding: 30px;
+	margin: 0;
+	font-weight: normal;
+}
+
+fieldset {
+	margin: 30px;
+	margin-top: 0px;
+	border: 3px solid rgb(192, 192, 192);
+}
+
+legend {
+	font-size: 20px;
+	text-align: center;
+}
+
+.titleLink {
+	
+}
+
+.inputField {
+	text-align: left;
+	font-family: georgia;
+	font-size: 24px;
+	line-height: 80px;
+	list-style-type: disc;
+	padding-left: 30px;
+}
+
+.inputLabel {
+	color: white;
+	margin-right: 10px;
+	line-height: 27px;
+}
+
+input, select {
+	vertical-align: middle;
+	height: 40px;
+	padding-left: 7px;
+}
+
+#submitField {
+	text-align: center;
+}
+
+#submitButton {
+	width: 300px;
+	height: 80px;
+	margin-bottom: 25px;
+	border: 0px solid gray;
+	border-radius: 25px;
+	text-align: center;
+	padding-left: 0px;
+}
+
+#submitButton:hover {
+	background-color: purple;
+	color: white;
+	cursor: pointer;
+}

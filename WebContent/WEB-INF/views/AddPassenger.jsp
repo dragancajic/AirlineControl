@@ -6,11 +6,10 @@
 	<meta charset="UTF-8" />
 	<title>World Adventures Airlines</title>
 	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 	<div class="container">
-		<h3>Welcome to World Adventures Airlines! :-)</h3>
-		<h4>This is JSP...</h4>
 		<div class="title">Add a passenger</div>
 		<fieldset>
 			<legend>Passenger details</legend>
