@@ -1,6 +1,8 @@
 package org.eu5.learn_pisio.controllers;
 
 import java.io.IOException;
+import java.util.Calendar;
+import java.util.Date;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -40,6 +42,31 @@ public class AddPassenger extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// in doPost() method we can process the form submission
+		
+		// get parameter(s)
+		String firstName = request.getParameter("first-name");
+		System.out.println("firstName: " + firstName);
+		
+		String lastName = request.getParameter("last-name");
+		System.out.println("lastName: " + lastName);
+		
+		String dateOfBirthRaw = request.getParameter("dateOfBirth");
+		String[] dateOfBirthArray = dateOfBirthRaw.split("\\/");
+		
+		String month = dateOfBirthArray[0];
+		String day = dateOfBirthArray[1];
+		String year = dateOfBirthArray[2];
+		
+		Calendar calendar = Calendar.getInstance();
+		
+		calendar.set(Calendar.MONTH, Integer.parseInt(month));
+		calendar.set(Calendar.DAY_OF_MONTH, Integer.parseInt(day));
+		calendar.set(Calendar.YEAR, Integer.parseInt(year));
+		
+		Date dateOfBirth = calendar.getTime();
+		
+		String gender = request.getParameter("gender");
+		System.out.println("gender: " + gender);
 	}
 
 }

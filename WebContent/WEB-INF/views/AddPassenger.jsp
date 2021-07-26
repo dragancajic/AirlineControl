@@ -1,19 +1,19 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8" />
-	<title>World Adventures Airlines</title>
-	<link rel="stylesheet" href="css/normalize.css" />
-	<link rel="stylesheet" href="css/style.css" />
+<meta charset="UTF-8" />
+<title>World Adventures Airlines</title>
+<link rel="stylesheet" href="css/normalize.css" />
+<link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 	<div class="container">
 		<div class="title">Add a passenger</div>
-		<fieldset>
-			<legend>Passenger details</legend>
-			<form action="AddPassenger" method="post">
+		<form action="AddPassenger" method="post">
+			<fieldset>
+				<legend>Passenger details</legend>
 				<div class="inputField">
 					<label for="first-name" class="inputLabel">First Name:</label>
 					<input name="first-name" type="text" />
@@ -28,14 +28,18 @@
 				</div>
 				<div class="inputField">
 					<label for="gender" class="inputLabel">Gender:</label>
-					<select name="gender">
+					<select
+						name="gender">
 						<option value="Male">Male</option>
 						<option value="Female">Female</option>
 					</select>
 				</div>
-			</form>
-		</fieldset>
-		<button class="inputField" id="submitButton" type="submit">Add new passenger</button>
+			</fieldset>
+			<div class="inputField" id="submitField">
+				<input id="submitButton" type="submit" value="Add new passenger" />
+				<!--<button class="inputField" id="submitButton" type="submit">Add new passenger</button>-->
+			</div>
+		</form>
 	</div>
 </body>
 </html>
