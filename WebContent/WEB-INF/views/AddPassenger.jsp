@@ -36,8 +36,8 @@
 				</div>
 			</fieldset>
 			<div class="inputField" id="submitField">
-				<input id="submitButton" type="submit" value="Add new passenger" />
-				<!--<button class="inputField" id="submitButton" type="submit">Add new passenger</button>-->
+				<!--<input id="submitButton" type="submit" value="Add new passenger" />-->
+				<button class="inputField" id="submitButton" type="submit">Add new passenger</button>
 			</div>
 		</form>
 	</div>
